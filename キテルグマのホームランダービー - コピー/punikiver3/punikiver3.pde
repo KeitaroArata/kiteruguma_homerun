@@ -83,7 +83,9 @@ AudioPlayer OP;
 //AudioPlayer R;
 
 void setup() {
-  myPort1 = new Serial(this,"COM3",9600);
+  //Arduino
+  //myPort1 = new Serial(this,"COM3",9600);
+  
  // myport1.write(0);
 //  myPort2 = new Serial(this, "COM4", 9600);
   //  noStroke();
@@ -209,7 +211,8 @@ if(GameMode == 0){
       swingcount=1;
       myPort1.write(1);
      }else{
-     myPort1.write(0);
+     //Arduino  
+     //myPort1.write(0);
      }
   if (count ==1 /*&& X >120*/) {
     if (t >= -TWO_PI/4 + PI/6) {
@@ -599,4 +602,8 @@ void stop()
 {
   R.close();  //サウンドデータを終了
   OP.close();
+}
+
+void ball(){
+  
 }
