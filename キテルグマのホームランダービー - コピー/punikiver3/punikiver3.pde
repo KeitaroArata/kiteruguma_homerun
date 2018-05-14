@@ -1,4 +1,4 @@
-import processing.serial.*;
+﻿import processing.serial.*;
 import ddf.minim.*;
 
 Serial myPort1;
@@ -81,7 +81,7 @@ AudioSample R; //サウンド「gs」の宣言
 
 AudioPlayer OP;
 //AudioPlayer R;
-
+//
 void setup() {
   //Arduino
   //myPort1 = new Serial(this,"COM3",9600);
